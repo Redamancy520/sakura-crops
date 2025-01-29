@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "cn.imsakura.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "CropMixin",
+    "ExampleMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}
