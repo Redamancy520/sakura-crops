@@ -16,8 +16,8 @@ public class Sakura implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
-		LOGGER.info("Start to load");
-		//Register Commands
+
+		LOGGER.info("[Sakura] - Start to load");//Register Commands
 		CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
 			ItemCleanner.register(dispatcher);
 		});
@@ -25,7 +25,7 @@ public class Sakura implements ModInitializer {
 		CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
 			CropCommand.register(dispatcher);
 		});
-		LOGGER.info("Register commands successfully.");
+		LOGGER.info("[Sakura] - Register commands successfully.");
 
 	}
 }
